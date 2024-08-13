@@ -29,7 +29,7 @@ To get started with FeedTube, follow these steps:
 
 3. **Set up the project server in Herd:**
     - In the PHP tab, select version 8.3 (8.3.3).
-    - In the General tab, add the path to the `feed-tube` directory.
+    - In the General tab, add the path to the `parentdirecory/feed-tube` directory.
 
 4. **Set up the `feed_tube` database in MySQL Workbench 8.0:**
     - Ensure that the MySQL bin directory is in your system's `PATH` environment variable:
