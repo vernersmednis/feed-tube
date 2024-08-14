@@ -1,0 +1,1 @@
+Welcome to the "Home" view of FeedTube!
