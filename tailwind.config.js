@@ -17,5 +17,17 @@ export default {
         },
     },
 
-    plugins: [forms],
+    plugins: [
+        forms,
+        function ({ addUtilities }) {
+            addUtilities({
+                    '.my-auto': {
+                        marginTop: 'auto',
+                        marginBottom: 'auto',
+                    },
+                },
+                ['responsive', 'hover']
+            );
+        },
+    ],
 };
