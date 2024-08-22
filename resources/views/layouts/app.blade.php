@@ -17,10 +17,11 @@
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
 
-            <!-- Navigation Bar -->
-            @include('layouts.navigation')
-            <!-- Sidebar -->
-            @include('layouts.sidebar')
+            <!-- Navigation Bar and Sidebar-->
+            <div x-data="{ showSearchBar: false, showSidebar: false }">
+                @include('layouts.navigation')
+                @include('layouts.sidebar')
+            </div>
 
             <!-- Page Heading -->
             @isset($header)

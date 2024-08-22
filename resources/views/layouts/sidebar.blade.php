@@ -1,4 +1,5 @@
-<div x-data="{ showSidebar: false }" @toggle-sidebar.window="showSidebar = !showSidebar" :class="{'sidebar-closed': !showSidebar, 'sidebar-open': showSidebar }" class="sidebar  sidebar-closed fixed top-0 left-0 w-72 h-full overflow-y-auto bg-white z-50">
+<!-- Sidebar -->
+<div :class="{'sidebar-closed': !showSidebar, 'sidebar-open': showSidebar }" class="sidebar  sidebar-closed fixed top-0 left-0 w-72 h-full overflow-y-auto bg-white z-50">
     <!-- Secondary Sidebar Content -->
     <div class="flex justify-between h-16 space-x-3 px-4">
         <div class="flex space-x-3">
