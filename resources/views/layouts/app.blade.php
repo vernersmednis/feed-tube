@@ -12,15 +12,16 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Styles and Scripts -->
-        @vite(['resources/css/app.css', 'resources/sass/dashboard.scss', 'resources/js/app.js'])
+        @vite(['resources/css/app.css', 'resources/sass/dashboard.scss', 'resources/sass/layouts/overlay.scss', 'resources/js/app.js'])
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
 
-            <!-- Navigation Bar and Sidebar-->
+            <!-- Navigation Bar, Sidebar and Transparent Gray Sidebar Background Overlay -->
             <div x-data="{ showSearchBar: false, showSidebar: false }">
                 @include('layouts.navigation')
                 @include('layouts.sidebar')
+                @include('layouts.overlay')
             </div>
 
             <!-- Page Heading -->
