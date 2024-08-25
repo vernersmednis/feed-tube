@@ -15,4 +15,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get('/video/{video}', function() {
+    return view('video.show');
+});
+
 require __DIR__.'/auth.php';
