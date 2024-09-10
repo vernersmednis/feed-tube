@@ -1,0 +1,2 @@
+<!-- Transparent Gray Sidebar Background Overlay -->
+<div @click="showSidebar = !showSidebar" :class="{'overlay-active': showSidebar }" class="overlay fixed top-0 left-0 w-full h-full bg-gray-900 z-40"></div>
